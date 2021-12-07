@@ -1,0 +1,15 @@
+@import   "abstracts/variables";
+
+.site-home {
+  width: 100%;
+  display: block;
+  top: 0;
+}
+
+.home-container {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;  
+}
