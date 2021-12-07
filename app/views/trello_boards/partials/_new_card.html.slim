@@ -1,0 +1,5 @@
+.banner-container.half.card
+  .banner-item.full
+    .card-item
+      = list.name
+    = link_to t('+ Add'), new_trello_board_path(list.id), class: "card-btn"

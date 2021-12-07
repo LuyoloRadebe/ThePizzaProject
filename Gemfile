@@ -28,6 +28,7 @@ gem 'sassc', '>= 2.1.0'
 gem 'sassc-rails'
 gem 'bootstrap-sass', '~> 3.4.1', '>= 3.3.6'
 gem 'jquery-rails', '~> 4.3'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 #gem 'jquery-ui-rails', '~> 6.0.1'
 
 # Use Redis adapter to run Action Cable in production

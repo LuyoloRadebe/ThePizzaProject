@@ -1,0 +1,5 @@
+.card
+  .banner-container
+    = "Create a new card for #{Trello::List.find(params.fetch(:list_id,{})).name} list"
+    = form_for :list_id, url: {action: :create} do |form|
+      = render form
