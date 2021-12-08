@@ -1,0 +1,24 @@
+.site-header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: inherit;
+  box-sizing: border-box;
+  background-color: $charcoal;
+  outline: 1px solid yellow;
+}
+
+.header-container {
+  position: relative;
+  padding: 10px 10px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: none;
+  outline: 1px solid red;
+}
+
