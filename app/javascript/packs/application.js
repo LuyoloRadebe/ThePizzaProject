@@ -5,7 +5,6 @@
 
 require("@rails/ujs").start()
 require("turbolinks").start()
-require("popper").start()
 require("@rails/activestorage").start()
 require("channels")
 
