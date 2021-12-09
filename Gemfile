@@ -9,6 +9,8 @@ gem 'devise'
 ## General server, client and basics
 gem 'rails', '~> 6.0.3', '>= 6.0.3.6'       # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'pg', '>= 0.18', '< 2.0'                # Use postgresql as the database for Active Record
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+
 gem 'puma', '~> 4.1'                        # Use Puma as the app server
 gem 'webpacker', '~> 4.0'                   # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'turbolinks', '~> 5'                    # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -28,6 +30,7 @@ gem 'sassc', '>= 2.1.0'
 gem 'sassc-rails'
 gem 'bootstrap-sass', '~> 3.4.1', '>= 3.3.6'
 gem 'jquery-rails', '~> 4.3'
+gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 #gem 'jquery-ui-rails', '~> 6.0.1'
 
 # Use Redis adapter to run Action Cable in production

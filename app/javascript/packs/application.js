@@ -4,8 +4,9 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("turbolinks").start()
 require("popper").start()
+require("turbolinks").start()
+require("bootstrap")
 require("@rails/activestorage").start()
 require("channels")
 
@@ -16,3 +17,11 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+const open_btn = document.querySelector('.open_modal');
+const close_btn = document.querySelector('.close_modal');
+const modal = document.querySelector('.modal');
+
+const toggleModal = () => modal.classList.toggle('is-active');
+
+open_btn.addEventListener('click', toggleModal);
+close_btn.addEventListener('click', toggleModal);
