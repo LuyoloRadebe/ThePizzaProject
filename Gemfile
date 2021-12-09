@@ -38,7 +38,7 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+# gem 'bootsnap', '>= 1.4.2', require: true
 
   group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
