@@ -2,28 +2,24 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-
 ## User Authentication Management
 gem 'devise'
-
 ## General server, client and basics
 gem 'rails', '~> 6.0.3', '>= 6.0.3.6'       # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'pg', '>= 0.18', '< 2.0'                # Use postgresql as the database for Active Record
-gem 'sqlite3', '~> 1.3', '>= 1.3.11'
-
+#remove sqlite3, not supported iin heroku
+#gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 gem 'puma', '~> 4.1'                        # Use Puma as the app server
 gem 'webpacker', '~> 4.0'                   # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'turbolinks', '~> 5'                    # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'jbuilder', '~> 2.7'                    # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'popper_js', '~> 2.9.3'
 gem 'dotenv-rails'
-
 #trello gem
 gem 'ruby-trello', '~> 1.5', '>= 1.5.1'
-
 ## UI Gems (not sure which are redundant)
 #gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-#gem 'sass-rails', '>= 6'
+#gem 'sass-rails', '>= 6':i
 gem 'slim-rails'
 #alternative
 gem 'sassc', '>= 2.1.0'

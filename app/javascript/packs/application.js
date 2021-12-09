@@ -4,12 +4,11 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("popper").start()
+//require("popper").start()
 require("turbolinks").start()
-require("bootstrap")
+//require("bootstrap")
 require("@rails/activestorage").start()
 require("channels")
-
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -17,11 +16,3 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-const open_btn = document.querySelector('.open_modal');
-const close_btn = document.querySelector('.close_modal');
-const modal = document.querySelector('.modal');
-
-const toggleModal = () => modal.classList.toggle('is-active');
-
-open_btn.addEventListener('click', toggleModal);
-close_btn.addEventListener('click', toggleModal);
