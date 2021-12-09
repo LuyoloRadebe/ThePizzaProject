@@ -20032,3 +20032,39 @@ Processing by StaticController#homepage as HTML
 Completed 200 OK in 4290ms (Views: 2946.1ms | ActiveRecord: 0.0ms | Allocations: 33632)
 
 
+Started GET "/" for ::1 at 2021-12-10 01:27:17 +0200
+Processing by StaticController#homepage as HTML
+  Rendering static/homepage.html.slim within layouts/application
+  Rendered trello_boards/_index.html.slim (Duration: 2701.7ms | Allocations: 33769)
+  Rendered static/homepage.html.slim within layouts/application (Duration: 2712.1ms | Allocations: 43087)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-12-10 01:27:23 +0200
+Processing by StaticController#homepage as HTML
+  Rendering static/homepage.html.slim within layouts/application
+[Webpacker] Compiled all packs in /Users/lradebe/Desktop/ThePizzaProject/public/packs
+[Webpacker] Hash: ecb133681bfbe9b8a830
+Version: webpack 4.46.0
+Time: 997ms
+Built at: 12/10/2021 1:27:26 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0f0ca8242e4c36af72c7.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0f0ca8242e4c36af72c7.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0f0ca8242e4c36af72c7.js js/application-0f0ca8242e4c36af72c7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered shared/_nav.html.slim (Duration: 3.9ms | Allocations: 2872)
+Completed 200 OK in 8422ms (Views: 6636.3ms | ActiveRecord: 0.0ms | Allocations: 247745)
+
+
+  Rendered trello_boards/_index.html.slim (Duration: 2765.7ms | Allocations: 23978)
+  Rendered static/homepage.html.slim within layouts/application (Duration: 2766.1ms | Allocations: 24053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.slim (Duration: 0.3ms | Allocations: 521)
+Completed 200 OK in 4131ms (Views: 2778.2ms | ActiveRecord: 0.0ms | Allocations: 38743)
+
+
