@@ -12,12 +12,17 @@ $anti-flash-white:    #f3f4f5;
  width: 50%;
 }
 .full {
-  width: 100%
+  width: 100%;
 }
-.y-center {
-  top: 50%;
+
+.center {
+  margin: 0 auto;
 }
 
 .x-center {
   left: 50%;
+}
+
+.top {
+  top:0;
 }

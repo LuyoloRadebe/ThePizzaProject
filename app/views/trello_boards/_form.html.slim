@@ -1,0 +1,5 @@
+.banner-item.full
+  = form.hidden_field :list_id, :value => Trello::List.find(params.fetch(:list_id,{})).id
+  = form.text_field :card_name, placeholder: "Enter a title for this card...", class: 'text-area'
+.banner-item.full  
+  = form.submit "Add card", class: 'card-btn'
