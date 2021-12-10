@@ -20099,3 +20099,55 @@ Completed 200 OK in 4071ms (Views: 2716.5ms | ActiveRecord: 0.0ms | Allocations:
 Completed 200 OK in 4416ms (Views: 3052.7ms | ActiveRecord: 0.0ms | Allocations: 79754)
 
 
+Started GET "/trello_boards/new?list_id=61b1fec0504da366769e6f98" for ::1 at 2021-12-10 02:10:45 +0200
+Processing by TrelloBoardsController#new as HTML
+  Parameters: {"list_id"=>"61b1fec0504da366769e6f98"}
+  Rendering trello_boards/new.html.slim within layouts/application
+  Rendered trello_boards/_form.html.slim (Duration: 671.3ms | Allocations: 5722)
+  Rendered trello_boards/new.html.slim within layouts/application (Duration: 1392.2ms | Allocations: 26987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.slim (Duration: 41.6ms | Allocations: 6538)
+Completed 200 OK in 1519ms (Views: 1514.5ms | ActiveRecord: 0.0ms | Allocations: 55746)
+
+
+Started GET "/trello_boards/new?list_id=61b1fec0504da366769e6f98" for ::1 at 2021-12-10 03:28:20 +0200
+Processing by TrelloBoardsController#new as HTML
+  Parameters: {"list_id"=>"61b1fec0504da366769e6f98"}
+  Rendering trello_boards/new.html.slim within layouts/application
+  Rendered trello_boards/_form.html.slim (Duration: 658.9ms | Allocations: 5722)
+  Rendered trello_boards/new.html.slim within layouts/application (Duration: 1448.1ms | Allocations: 26985)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.slim (Duration: 12.2ms | Allocations: 6538)
+Completed 200 OK in 1550ms (Views: 1546.0ms | ActiveRecord: 0.0ms | Allocations: 55733)
+
+
+Started GET "/" for ::1 at 2021-12-10 03:28:26 +0200
+Processing by StaticController#homepage as HTML
+  Rendering static/homepage.html.slim within layouts/application
+  Rendered trello_boards/_index.html.slim (Duration: 2692.1ms | Allocations: 30844)
+  Rendered static/homepage.html.slim within layouts/application (Duration: 2715.2ms | Allocations: 32716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.slim (Duration: 0.6ms | Allocations: 523)
+Completed 200 OK in 4086ms (Views: 2729.9ms | ActiveRecord: 0.0ms | Allocations: 54306)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-10 12:47:04 +0200
+Processing by StaticController#homepage as HTML
+  Rendering static/homepage.html.slim within layouts/application
+  Rendered trello_boards/_index.html.slim (Duration: 3423.6ms | Allocations: 36806)
+  Rendered static/homepage.html.slim within layouts/application (Duration: 3432.5ms | Allocations: 46314)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.slim (Duration: 3.7ms | Allocations: 2872)
+Completed 200 OK in 5776ms (Views: 3527.4ms | ActiveRecord: 0.0ms | Allocations: 262466)
+
+
+Started GET "/" for ::1 at 2021-12-10 17:01:53 +0200
+Processing by StaticController#homepage as HTML
+  Rendering static/homepage.html.slim within layouts/application
+  Rendered trello_boards/_index.html.slim (Duration: 2762.3ms | Allocations: 34572)
+  Rendered static/homepage.html.slim within layouts/application (Duration: 2774.1ms | Allocations: 44504)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_nav.html.slim (Duration: 3.2ms | Allocations: 2858)
+Completed 200 OK in 7656ms (Views: 5993.2ms | ActiveRecord: 0.0ms | Allocations: 385325)
+
+
