@@ -1,2 +1,9 @@
-.banner
-  = render 'trello_boards/index'
+.session-header
+  = link_to t('How to access your Trello API Token'), new_user_session_path, class: 'form-btn'
+.form-container
+  .left-container
+    = form_with model: @trello_board, url: {action: :new} do |form|
+      = render form
+  .right-container 
+    = link_to t('Sign In'), new_user_session_path, class: 'form-btn'
+    = link_to t('Sign Up'), new_user_registration_path, class: 'form-btn'

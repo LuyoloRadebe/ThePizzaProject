@@ -1,0 +1,11 @@
+.session-header
+  h3
+  | Forgot your password?
+.form-container
+  .left-container
+    = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      = f.label :email
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+      = f.submit "Send me reset password instructions"
+  .right-container 
+    = render "devise/shared/links"

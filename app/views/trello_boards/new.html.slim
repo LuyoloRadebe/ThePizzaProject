@@ -1,7 +1,6 @@
-.banner.full.center
-  .banner-container.card.center
-    .banner-item.full
-      h3
-        = "New card for \"#{Trello::List.find(params.fetch(:list_id,{})).name}\" list"
-    = form_for :new_card, url: {action: :create} do |form|
+.form-container
+  .left-container
+    = form_with model: @trello_board, url: {action: :create} do |form|
       = render form
+  .right-container
+    = "New card for \"#{Trello::List.find(params.fetch(:list_id,{})).name}\" list"     
