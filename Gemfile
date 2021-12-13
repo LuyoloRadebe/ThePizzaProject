@@ -8,6 +8,10 @@ gem 'bundler', '~> 2.2.21'
 gem 'puma', '~> 4.1'                        # Use Puma as the app server
 ## User Authentication Management
 gem 'devise'
+
+## API gems
+gem 'rest-client', '~> 2.1'
+gem 'uri', '~> 0.10.0'
 ## General server, client and basics
 gem 'rails', '~> 6.0.3', '>= 6.0.3.6'       # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'pg', '>= 0.18', '< 2.0'                # Use postgresql as the database for Active Record
@@ -20,6 +24,7 @@ gem 'popper_js', '~> 2.9.3'
 gem 'dotenv-rails'
 #trello gem
 gem 'ruby-trello', '~> 1.5', '>= 1.5.1'
+#gem 'oauth', '~> 0.5.1'
 ## UI Gems (not sure which are redundant)
 #gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 #gem 'sass-rails', '>= 6':i

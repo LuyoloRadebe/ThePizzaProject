@@ -1,11 +1,9 @@
 class TrelloBoard < ApplicationRecord
-  before_action :api_init, only: [:new_client]
+  #before_action :api_init, only: [:new_client]
 
   def new_client
     @trello_boards = TrelloBoard.new        
   end 
-
-
 
   def api_init
     Trello.configure do |config|

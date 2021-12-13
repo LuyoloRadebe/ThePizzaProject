@@ -76,7 +76,7 @@
 
 .trello-lists li {
   list-style: none;
-  border: 2px solid #490A3D;
+  border: 2px solid darken($bright-gray, 50%);
   border-radius:5px;
   background: darken($bright-gray, 20%);
   box-shadow: (0 0 10px 0 rgba(#000, 90));
@@ -96,7 +96,8 @@
 
 .trello-lists {
   background-color: $anti-flash-white;
-  margin: 10px auto;
+  margin: 10px 5px;
+  //padding: auto 10px;
   color: $davy-grey;
   cursor: pointer;
 }
@@ -112,7 +113,7 @@
   position: relative;
   left: 0;
   margin: auto 0;
-  text-align: center;
+  text-align: inherit;
   justify-content: space-between;
 }
 

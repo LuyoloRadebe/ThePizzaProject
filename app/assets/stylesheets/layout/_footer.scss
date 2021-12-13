@@ -4,25 +4,47 @@
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: $charcoal;
   text-align: center;  
 }
 
 .footer-container {
   margin: 0px 0px; 
   display: flex;
+  flex-direction: row;
   position: relative;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  border-radius: 10px;
 }
 
 .footer-item {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 5px;
-  padding: 5px 5px;
+  padding: 10px auto;
+  background-color: $charcoal;
+  color: $anti-flash-white;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);  
+  position: relative;
+  overflow: auto;
+  font-size: 15px;
+  //padding: 12px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.align-right {
+  right: 0;
+}
+// .card-item {
+//   box-sizing: border-box;
+//   color: $charcoal;
+//   font-size: 15px;
+//   outline: none;
+//   font-weight: 500;
+//   //@at-root: 20px 20px;
+//   position: relative;
+//   left: 0;
+//   margin: auto 0;
+//   text-align: inherit;
+//   justify-content: space-between;
+// }

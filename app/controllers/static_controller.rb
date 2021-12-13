@@ -3,10 +3,12 @@ class StaticController < ApplicationController
   end
 
   def new
-    @trello_boards = TrelloBoard.new
-    # Trello.configure do |config|
-    #    config.developer_public_key = params[:api_init][:TRELLO_API_KEY]
-    #    config.member_token = params[:api_init][:TRELLO_API_TOKEN]
-    # end
+  end
+
+  def reset
+    current_user.api_key = nil
+    current_user.api_token = nil
+    current_user.save!
+    redirect_to root_path
   end
 end

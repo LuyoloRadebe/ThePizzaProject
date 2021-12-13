@@ -9,14 +9,14 @@
   text-align: center;
   text-decoration: none !important;
   background-color: $blue-jeans;
-
+  white-space: nowrap;
   color: #fff;
   border-radius: 20px;
   font-family: inherit;
   font-size: 15px;
   justify-content: center;
   align-items: center;
-
+  height: initial;
   &:hover {
     transition: all 150ms linear;
     background: darken($blue-jeans, 20%);
@@ -33,4 +33,18 @@
   width: 80%;
   text-align: center;
   cursor: pointer;  
+}
+
+.foot-btn {
+  // right: 0;
+  // cursor: pointer;
+  // text-align: center;
+  // text-decoration: none !important;
+  // background-color: $anti-flash-white;
+  // white-space: nowrap;
+  // color: $charcoal;
+  // font-family: inherit;
+  // justify-content: center;
+  // align-items: center;
+  // height: initial;
 }
