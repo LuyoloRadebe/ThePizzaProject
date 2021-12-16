@@ -1,97 +1,125 @@
-.card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
-  border-radius: 5px;
-  background: darken($bright-gray, 10%);
-  box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  margin: auto;
-}
-
-.card-list {
-  position: relative;
-  padding: 10px 10px;
-  //margin: 10px 10px;  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: $anti-flash-white;
-  box-sizing: border-box;
-  border-radius: 10px;
-  color: $davy-grey;
-}
-
-.card-item {
-    border-style: none;
-    box-sizing: border-box;
-    color: $charcoal;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 800;
-    height: inherit;
-    line-height: 0px;
-    //list-style: none;
-    outline: none;
-    padding: 20px 20px;
-    position: relative;
-    left: 0;
-    //margin: 0 20px 20px 0;
-    text-align: center;
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-between;
-  //margin: 0px 5px;
-  //padding: 5px 5px;
-  //border-radius: 10px;
-  //outline: 1px solid pink;
-}
-
-// .card:nth-child(1) {
-//   margin-right: 30px;
+// .card {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   height: auto;
+//   border-radius: 5px;
+//   background: darken($bright-gray, 10%);
+//   box-shadow: 10px 0 50px rgba(0, 0, 0, 0.5);
+//   overflow: hidden;
+//   margin: auto;
 // }
 
-//body:hover .card {
-  //filter: blur(5px);
-  //transform: scale(0.95);
-  //opacity: 0.7;
-  //transition: 0.9s;
-//}
+// .card-list {
+//   position: relative;
+//   padding: 10px 10px;
+//   //margin: 10px 10px;  
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   background-color: $anti-flash-white;
+//   box-sizing: border-box;
+//   border-radius: 10px;
+//   color: $davy-grey;
+// }
 
-body .card:hover {
-  //filter: blur(0);
-  transform: background-color $bright-gray;
-  opacity: 1;
-  transition: 0.7s;
+
+// // .card:nth-child(1) {
+// //   margin-right: 30px;
+// // }
+
+// //body:hover .card {
+//   //filter: blur(5px);
+//   //transform: scale(0.95);
+//   //opacity: 0.7;
+//   //transition: 0.9s;
+// //}
+
+// body .card:hover {
+//   //filter: blur(0);
+//   transform: background-color $bright-gray;
+//   opacity: 1;
+//   transition: 0.7s;
+// }
+
+// form {
+//   position: sticky;
+//   height: inherit;
+//   padding: 0 auto;
+//   margin: 0 auto;
+//   top: 0;
+//   width:100%;
+//   display: flex;
+//   flex-direction: column;  
+//   align-items: center;
+//   overflow: auto;
+//   justify-content: space-between;
+//   box-sizing: border-box;
+//   border-radius: 10px;
+//   outline: 1px solid purple;
+// }
+
+// .text-area {
+//   width:100%;
+//   resize: vertical;
+//   padding:15px;
+//   border-radius:15px;
+//   border:0;
+//   box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+//   height:auto;
+//   align-content: flex-start;
+// }
+
+
+
+.trello-lists li {
+  list-style: none;
+  border: 2px solid darken($bright-gray, 50%);
+  border-radius:5px;
+  background: darken($bright-gray, 20%);
+  box-shadow: (0 0 10px 0 rgba(#000, 90));
+  padding: 5px 5px;
+  flex: 1 1 200px;
 }
 
-form {
-  position: sticky;
-  height: inherit;
-  padding: 0 auto;
-  margin: 0 auto;
-  top: 0;
-  width:100%;
+.trello-cards {
   display: flex;
-  flex-direction: column;  
-  align-items: center;
-  overflow: auto;
   justify-content: space-between;
-  box-sizing: border-box;
-  border-radius: 10px;
-  outline: 1px solid purple;
+  margin: 10px auto;
+  padding: 5px 5px;
+  border-radius: 20px;
+  padding: 10px 10px;
+  //outline: 1px solid orange;  
 }
 
-.text-area {
-  width:100%;
-  resize: vertical;
-  padding:15px;
-  border-radius:15px;
-  border:0;
-  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
-  height:auto;
-  align-content: flex-start;
+.trello-lists {
+  background-color: $anti-flash-white;
+  margin: 10px 5px;
+  //padding: auto 10px;
+  color: $davy-grey;
+  cursor: pointer;
+}
+
+
+.card-item {
+  box-sizing: border-box;
+  color: $charcoal;
+  font-size: 15px;
+  outline: none;
+  font-weight: 500;
+  //@at-root: 20px 20px;
+  position: relative;
+  left: 0;
+  margin: auto 0;
+  text-align: inherit;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  padding: 0;
 }

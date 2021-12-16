@@ -1,24 +1,16 @@
-.site-header {
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: inherit;
-  box-sizing: border-box;
+.session-header {
+  margin: 20px auto;
   background-color: $charcoal;
-  outline: 1px solid yellow;
-}
-
-.header-container {
+  color: $anti-flash-white;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   position: relative;
-  padding: 10px 10px;  
+  width: 768px;
+  max-width: 100%;
+  overflow: auto;
+  font-size: 15px;
+  //padding: 12px 15px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  background-color: none;
-  outline: 1px solid red;
 }
-

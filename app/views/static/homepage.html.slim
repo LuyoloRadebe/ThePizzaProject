@@ -1,2 +1,29 @@
-.banner
-  = render 'trello_boards/index'
+.session-header
+  = link_to t('How to access your Trello API Token'), href="https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/" , class: 'form-btn'
+.form-container
+  .left-container
+    - if user_signed_in? && current_user.api_key?
+        = link_to t('Go to my board'), trello_boards_path, class: 'form-btn'
+        = link_to t('Reset my API tokens'),static_reset_path, class: 'form-btn'
+    - else  
+      = form_with model: @trello_boards, url: {action: :new} do |form|  
+        = render form
+  .right-container
+    - if user_signed_in?
+      - if current_user.api_key.nil?
+        .form-info
+          p
+          | WELCOME BACK, #{current_user.username.upcase}!
+          br
+          | THERE IS CURRENTLY NO TRELLO API_KEY OR API_TOKEN 
+          | ASSOCIATED WITH YOUR PROFILE. 
+          br
+          | FOR A GUIDE ON HOW TO GENERATE ONE, CLICK THE LINK ABOVE.
+      - if current_user.api_key?
+        .form-info
+          p
+          | WELCOME BACK, #{current_user.username.upcase}!        
+    - else 
+      = link_to t('Sign In'), new_user_session_path, class: 'form-btn'
+      = link_to t('Sign Up'), new_user_registration_path, class: 'form-btn'
+      = link_to t('My Boards with Environment Variables'), trello_boards_path, class: 'form-btn'
